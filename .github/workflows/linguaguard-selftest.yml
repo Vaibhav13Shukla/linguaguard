@@ -1,0 +1,37 @@
+name: LinguaGuard Self Test
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  i18n-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build local action
+        run: |
+          cd action
+          npm ci --legacy-peer-deps
+          npm run build
+
+      - name: Run LinguaGuard (local action)
+        uses: ./action
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lingo-api-key: ${{ secrets.LINGO_API_KEY }}
+          locales-path: test-repo/src/locales
+          source-locale: en
+          target-locales: ja,de,hi,ar
+          scan-paths: test-repo/src/**/*.tsx
+          auto-fix: false
