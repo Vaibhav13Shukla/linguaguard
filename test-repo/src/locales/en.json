@@ -1,0 +1,11 @@
+{
+  "footer": {
+    "copyright": "© 2025 MyApp. All rights reserved.",
+    "builtWith": "Built with ❤️ and Lingo.dev"
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "about": "About"
+  }
+}

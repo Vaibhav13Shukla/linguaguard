@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "Catches broken i18n before it ships"
+  },
+  "stats": {
+    "totalScans": "Total Scans",
+    "autoFixes": "Auto-Fixes",
+    "avgCoverage": "Avg Coverage",
+    "repos": "Repositories"
+  },
+  "repos": {
+    "title": "Monitored Repositories",
+    "scans": "Scans",
+    "fixes": "Fixes",
+    "empty": "No repositories connected yet",
+    "emptyHint": "Add LinguaGuard to your GitHub repo to get started"
+  },
+  "scans": {
+    "title": "Recent Scans",
+    "repo": "Repository",
+    "pr": "PR",
+    "coverage": "Coverage",
+    "when": "When"
+  },
+  "footer": {
+    "powered": "Powered by Lingo.dev",
+    "hackathon": "Built for Lingo.dev Multilingual Hackathon #2"
+  }
+}

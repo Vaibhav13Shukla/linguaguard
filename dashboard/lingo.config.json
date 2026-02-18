@@ -1,0 +1,7 @@
+{
+  "sourceLocale": "en",
+  "targetLocales": ["hi", "ar", "ja", "de"],
+  "files": {
+    "include": ["public/locales/**/*.json"]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "اكتشاف مشاكل i18n قبل الإطلاق"
+  },
+  "stats": {
+    "totalScans": "إجمالي الفحوصات",
+    "autoFixes": "إصلاحات تلقائية",
+    "avgCoverage": "متوسط التغطية",
+    "repos": "المستودعات"
+  },
+  "repos": {
+    "title": "المستودعات المراقبة",
+    "scans": "الفحوصات",
+    "fixes": "الإصلاحات",
+    "empty": "لا توجد مستودعات متصلة بعد",
+    "emptyHint": "أضف LinguaGuard إلى مستودع GitHub للبدء"
+  },
+  "scans": {
+    "title": "أحدث الفحوصات",
+    "repo": "المستودع",
+    "pr": "طلب دمج",
+    "coverage": "التغطية",
+    "when": "الوقت"
+  },
+  "footer": {
+    "powered": "بدعم من Lingo.dev",
+    "hackathon": "تم بناؤه من أجل Lingo.dev Multilingual Hackathon #2"
+  }
+}

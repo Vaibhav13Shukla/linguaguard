@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "रिलीज से पहले i18n त्रुटियां पकड़ें"
+  },
+  "stats": {
+    "totalScans": "कुल स्कैन",
+    "autoFixes": "ऑटो-फिक्स",
+    "avgCoverage": "औसत कवरेज",
+    "repos": "रिपॉजिटरी"
+  },
+  "repos": {
+    "title": "मॉनिटर की गई रिपॉजिटरी",
+    "scans": "स्कैन",
+    "fixes": "फिक्स",
+    "empty": "अभी कोई रिपॉजिटरी कनेक्ट नहीं है",
+    "emptyHint": "शुरू करने के लिए अपनी GitHub रिपॉजिटरी में LinguaGuard जोड़ें"
+  },
+  "scans": {
+    "title": "हाल के स्कैन",
+    "repo": "रिपॉजिटरी",
+    "pr": "PR",
+    "coverage": "कवरेज",
+    "when": "समय"
+  },
+  "footer": {
+    "powered": "Lingo.dev द्वारा संचालित",
+    "hackathon": "Lingo.dev Multilingual Hackathon #2 के लिए बनाया गया"
+  }
+}

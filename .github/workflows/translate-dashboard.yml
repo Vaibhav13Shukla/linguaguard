@@ -1,0 +1,35 @@
+name: "Translate Dashboard via Lingo.dev"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dashboard/public/locales/en/**"
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Translate dashboard
+        env:
+          LINGO_API_KEY: ${{ secrets.LINGO_API_KEY }}
+        run: |
+          cd dashboard
+          npx lingo.dev push
+          npx lingo.dev pull
+
+      - name: Commit translations
+        run: |
+          git config user.email "linguaguard-bot@users.noreply.github.com"
+          git config user.name "LinguaGuard Bot"
+          git add dashboard/public/locales/
+          git diff --staged --quiet || git commit -m "Auto-translate dashboard via Lingo.dev"
+          git push

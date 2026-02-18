@@ -1,0 +1,24 @@
+name: "LinguaGuard i18n Check"
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  i18n-check:
+    name: Check i18n Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run LinguaGuard
+        uses: yourusername/linguaguard@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lingo-api-key: ${{ secrets.LINGO_API_KEY }}
+          locales-path: src/locales
+          source-locale: en
+          target-locales: ja,de,hi,ar
+          scan-paths: src/**/*.tsx
+          auto-fix: true

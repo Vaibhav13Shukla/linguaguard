@@ -1,0 +1,51 @@
+name: "LinguaGuard"
+description: "Catches broken i18n before it ships. Powered by Lingo.dev."
+author: "Vaibhav"
+
+branding:
+  icon: "globe"
+  color: "purple"
+
+inputs:
+  github-token:
+    description: "GitHub token for PR comments and commits"
+    required: true
+    default: ${{ github.token }}
+
+  lingo-api-key:
+    description: "Lingo.dev API key for auto-translation"
+    required: true
+
+  locales-path:
+    description: "Path to locale files directory"
+    required: false
+    default: "public/locales"
+
+  source-locale:
+    description: "Source language code"
+    required: false
+    default: "en"
+
+  target-locales:
+    description: "Comma-separated target language codes"
+    required: false
+    default: "hi,ar,ja,de"
+
+  scan-paths:
+    description: "Comma-separated paths to scan for hardcoded strings"
+    required: false
+    default: "src/**/*.tsx,src/**/*.jsx"
+
+  auto-fix:
+    description: "Automatically fix missing translations via Lingo.dev"
+    required: false
+    default: "true"
+
+  fail-on-issues:
+    description: "Fail the check if i18n issues are found"
+    required: false
+    default: "false"
+
+runs:
+  using: "node20"
+  main: "built/index.js"

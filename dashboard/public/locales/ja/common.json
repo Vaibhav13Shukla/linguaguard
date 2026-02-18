@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "リリース前にi18nの不備を検出"
+  },
+  "stats": {
+    "totalScans": "総スキャン数",
+    "autoFixes": "自動修正",
+    "avgCoverage": "平均カバレッジ",
+    "repos": "リポジトリ"
+  },
+  "repos": {
+    "title": "監視中のリポジトリ",
+    "scans": "スキャン",
+    "fixes": "修正",
+    "empty": "接続されたリポジトリはまだありません",
+    "emptyHint": "開始するにはGitHubリポジトリにLinguaGuardを追加してください"
+  },
+  "scans": {
+    "title": "最近のスキャン",
+    "repo": "リポジトリ",
+    "pr": "PR",
+    "coverage": "カバレッジ",
+    "when": "日時"
+  },
+  "footer": {
+    "powered": "Powered by Lingo.dev",
+    "hackathon": "Lingo.dev Multilingual Hackathon #2 向けに作成"
+  }
+}

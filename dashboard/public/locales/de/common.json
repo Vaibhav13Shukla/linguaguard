@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "Fängt i18n-Probleme vor dem Release ab"
+  },
+  "stats": {
+    "totalScans": "Scans gesamt",
+    "autoFixes": "Auto-Fixes",
+    "avgCoverage": "Ø Abdeckung",
+    "repos": "Repositories"
+  },
+  "repos": {
+    "title": "Überwachte Repositories",
+    "scans": "Scans",
+    "fixes": "Fixes",
+    "empty": "Noch keine Repositories verbunden",
+    "emptyHint": "Füge LinguaGuard zu deinem GitHub-Repo hinzu"
+  },
+  "scans": {
+    "title": "Letzte Scans",
+    "repo": "Repository",
+    "pr": "PR",
+    "coverage": "Abdeckung",
+    "when": "Zeitpunkt"
+  },
+  "footer": {
+    "powered": "Powered by Lingo.dev",
+    "hackathon": "Gebaut für Lingo.dev Multilingual Hackathon #2"
+  }
+}
