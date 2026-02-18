@@ -23,8 +23,7 @@ jobs:
           LINGO_API_KEY: ${{ secrets.LINGO_API_KEY }}
         run: |
           cd dashboard
-          npx lingo.dev push
-          npx lingo.dev pull
+          npx lingo.dev -y run --api-key "$LINGO_API_KEY"
 
       - name: Commit translations
         run: |
